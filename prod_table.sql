@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2023 at 07:51 PM
+-- Generation Time: Apr 10, 2023 at 04:14 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -43,7 +43,13 @@ CREATE TABLE `prod_table` (
 --
 
 INSERT INTO `prod_table` (`prod_id`, `prod_name`, `prod_price`, `prod_stcks`, `prod_type`, `prod_stat`, `prod_brand`, `prod_image`) VALUES
-(51, 'Ram', '99', '80', 'Internal Part', 'New', 'RGX', 0x6e756c6c);
+(51, 'Ram', '99', '80', 'Internal Part', 'New', 'RGX', 0x6e756c6c),
+(52, 'Keyboard', '600', '89', 'External Part', 'New', 'No Brand', 0x6e756c6c),
+(53, 'CPU', '78', '8', 'External Part', 'New', 'asd', 0x6e756c6c),
+(54, 'SIOMAI', '234', '234', 'External Part', 'New', 'asdfasdf', 0x6e756c6c),
+(55, 'SSD', '2342', '34534', 'External Part', 'New', 'asdfasd', 0x6e756c6c),
+(56, 'HDD', '666', '34', 'External Part', 'New', 'asdf', 0x6e756c6c),
+(57, 'Mouse', '7787', '34', 'External Part', 'New', 'asdfasd', 0x6e756c6c);
 
 --
 -- Indexes for dumped tables
@@ -63,7 +69,7 @@ ALTER TABLE `prod_table`
 -- AUTO_INCREMENT for table `prod_table`
 --
 ALTER TABLE `prod_table`
-  MODIFY `prod_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `prod_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

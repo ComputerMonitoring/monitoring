@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2023 at 07:52 PM
+-- Generation Time: Apr 10, 2023 at 04:14 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -45,7 +45,8 @@ CREATE TABLE `prod_user` (
 INSERT INTO `prod_user` (`user_id`, `user_name`, `user_gender`, `user_number`, `user_email`, `user_address`, `user_role`, `user_password`) VALUES
 (20, 'fasdfasd', 'MALE', '1234123', 'sadfasd', 'asdfasdf', 'Seller', '12345678'),
 (21, 'fasdfasd', 'MALE', '1234123', 'sadfasd', 'asdfasdf', 'Seller', '12345678'),
-(22, 'Harfeil Salmeron', 'MALE', '90562345', 'fsdfgsdfgsdfgsdf', 'gsdf', 'Buyer', '12345678');
+(22, 'harfeil salmeron', 'MALE', '90562345', 'fsdfgsdfgsdfgsdf', 'gsdf', 'Buyer', '12345678'),
+(23, 'jeremy carazo', 'MALE', '64567567', 'asdf', 'sdf', 'Buyer', '12345678');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +66,7 @@ ALTER TABLE `prod_user`
 -- AUTO_INCREMENT for table `prod_user`
 --
 ALTER TABLE `prod_user`
-  MODIFY `user_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `user_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2023 at 07:51 PM
+-- Generation Time: Apr 10, 2023 at 04:13 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -41,7 +41,8 @@ CREATE TABLE `prod_buyer` (
 --
 
 INSERT INTO `prod_buyer` (`buyer_id`, `buyer_name`, `buyer_address`, `buyer_number`, `buyer_gender`, `buyer_email`) VALUES
-(27, 'Harfeil Salmeron', 'tungkop', '23423', 'Male', 'harifasd');
+(27, 'Harfeil Salmeron', 'tungkop', '23423', 'Male', 'harifasd'),
+(28, 'Jeremy Carazo', 'asdfasdf', '12312234', 'Male', 'asdfasd');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +62,7 @@ ALTER TABLE `prod_buyer`
 -- AUTO_INCREMENT for table `prod_buyer`
 --
 ALTER TABLE `prod_buyer`
-  MODIFY `buyer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `buyer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

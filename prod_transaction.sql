@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2023 at 07:52 PM
+-- Generation Time: Apr 10, 2023 at 04:15 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,7 +40,14 @@ CREATE TABLE `prod_transaction` (
 --
 
 INSERT INTO `prod_transaction` (`trans_id`, `prod_id`, `buyer_id`, `trans_date`, `trans_totalPay`) VALUES
-(8, 51, 27, '2023-04-09', 99);
+(8, 51, 27, '2023-04-09', 99),
+(9, 51, 27, '2023-04-10', 0),
+(10, 52, 28, '2023-04-10', 600),
+(11, 54, 27, '2023-04-10', 468),
+(12, 53, 27, '2023-04-10', 156),
+(16, 51, 27, '2023-04-10', 99),
+(17, 51, 27, '2023-04-10', 99),
+(18, 51, 27, '2023-04-10', 198);
 
 --
 -- Indexes for dumped tables
@@ -62,7 +69,7 @@ ALTER TABLE `prod_transaction`
 -- AUTO_INCREMENT for table `prod_transaction`
 --
 ALTER TABLE `prod_transaction`
-  MODIFY `trans_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `trans_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Constraints for dumped tables
