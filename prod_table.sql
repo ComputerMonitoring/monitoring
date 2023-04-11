@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2023 at 04:14 PM
+-- Generation Time: Apr 11, 2023 at 07:00 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -49,7 +49,11 @@ INSERT INTO `prod_table` (`prod_id`, `prod_name`, `prod_price`, `prod_stcks`, `p
 (54, 'SIOMAI', '234', '234', 'External Part', 'New', 'asdfasdf', 0x6e756c6c),
 (55, 'SSD', '2342', '34534', 'External Part', 'New', 'asdfasd', 0x6e756c6c),
 (56, 'HDD', '666', '34', 'External Part', 'New', 'asdf', 0x6e756c6c),
-(57, 'Mouse', '7787', '34', 'External Part', 'New', 'asdfasd', 0x6e756c6c);
+(57, 'Mouse', '7787', '34', 'External Part', 'New', 'asdfasd', 0x6e756c6c),
+(58, 'MousePad', '89', '78', 'External Part', 'New', 'NewMousePad', 0x6e756c6c),
+(59, 'Fan RGX', '899', '76', 'Internal Part', 'Old', 'RAZER', 0x6e756c6c),
+(60, 'Keyboard', '9823', '12', 'External Part', 'New', 'SAINT', 0x6e756c6c),
+(61, 'Motherboard', '8777', '8', 'Internal Part', 'New', 'LENOVOVO', 0x6e756c6c);
 
 --
 -- Indexes for dumped tables
@@ -69,7 +73,7 @@ ALTER TABLE `prod_table`
 -- AUTO_INCREMENT for table `prod_table`
 --
 ALTER TABLE `prod_table`
-  MODIFY `prod_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `prod_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

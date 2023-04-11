@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2023 at 04:15 PM
+-- Generation Time: Apr 11, 2023 at 07:01 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `prod_transaction` (
   `trans_id` int(10) NOT NULL,
+  `user_id` int(20) NOT NULL,
   `prod_id` int(11) NOT NULL,
   `buyer_id` int(11) NOT NULL,
   `trans_date` date NOT NULL,
@@ -39,15 +40,11 @@ CREATE TABLE `prod_transaction` (
 -- Dumping data for table `prod_transaction`
 --
 
-INSERT INTO `prod_transaction` (`trans_id`, `prod_id`, `buyer_id`, `trans_date`, `trans_totalPay`) VALUES
-(8, 51, 27, '2023-04-09', 99),
-(9, 51, 27, '2023-04-10', 0),
-(10, 52, 28, '2023-04-10', 600),
-(11, 54, 27, '2023-04-10', 468),
-(12, 53, 27, '2023-04-10', 156),
-(16, 51, 27, '2023-04-10', 99),
-(17, 51, 27, '2023-04-10', 99),
-(18, 51, 27, '2023-04-10', 198);
+INSERT INTO `prod_transaction` (`trans_id`, `user_id`, `prod_id`, `buyer_id`, `trans_date`, `trans_totalPay`) VALUES
+(19, 24, 51, 27, '2023-04-11', 198),
+(20, 24, 51, 27, '2023-04-11', 99),
+(21, 24, 53, 27, '2023-04-11', 156),
+(23, 24, 60, 28, '2023-04-11', 9823);
 
 --
 -- Indexes for dumped tables
@@ -59,7 +56,8 @@ INSERT INTO `prod_transaction` (`trans_id`, `prod_id`, `buyer_id`, `trans_date`,
 ALTER TABLE `prod_transaction`
   ADD PRIMARY KEY (`trans_id`),
   ADD KEY `prod_id` (`prod_id`),
-  ADD KEY `buyer_id` (`buyer_id`);
+  ADD KEY `buyer_id` (`buyer_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -69,7 +67,7 @@ ALTER TABLE `prod_transaction`
 -- AUTO_INCREMENT for table `prod_transaction`
 --
 ALTER TABLE `prod_transaction`
-  MODIFY `trans_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `trans_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Constraints for dumped tables
@@ -80,7 +78,8 @@ ALTER TABLE `prod_transaction`
 --
 ALTER TABLE `prod_transaction`
   ADD CONSTRAINT `prod_transaction_ibfk_1` FOREIGN KEY (`prod_id`) REFERENCES `prod_table` (`prod_id`),
-  ADD CONSTRAINT `prod_transaction_ibfk_2` FOREIGN KEY (`buyer_id`) REFERENCES `prod_buyer` (`buyer_id`);
+  ADD CONSTRAINT `prod_transaction_ibfk_2` FOREIGN KEY (`buyer_id`) REFERENCES `prod_buyer` (`buyer_id`),
+  ADD CONSTRAINT `prod_transaction_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `prod_user` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

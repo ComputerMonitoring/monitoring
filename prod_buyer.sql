@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2023 at 04:13 PM
+-- Generation Time: Apr 11, 2023 at 07:00 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -42,7 +42,18 @@ CREATE TABLE `prod_buyer` (
 
 INSERT INTO `prod_buyer` (`buyer_id`, `buyer_name`, `buyer_address`, `buyer_number`, `buyer_gender`, `buyer_email`) VALUES
 (27, 'Harfeil Salmeron', 'tungkop', '23423', 'Male', 'harifasd'),
-(28, 'Jeremy Carazo', 'asdfasdf', '12312234', 'Male', 'asdfasd');
+(28, 'Jeremy Carazo', 'asdfasdf', '12312234', 'Male', 'asdfasd'),
+(29, 'Mike Bustamante', 'Minglanilla', '1234123413', 'Male', 'mikebustamante@gmail.com'),
+(30, 'Hariell Salmeron', 'Tungkop MInglanilla', '098678345345', 'Male', 'hariellsalmeron@gmail.com'),
+(31, 'Darin Serencio', 'Taga Boarding House', '78934513123', 'Male', 'darinserencio@gmail.com'),
+(32, 'Jay Ann Arnido', 'Boarding', '32452345', 'Female', 'arnido@gmail.com'),
+(33, 'Christine Bendanillo', 'Minglanilla', '039454356345', 'Female', 'bendanillo@gmail.com'),
+(34, 'Chona Sabanal', 'Minglanilla', '807896785', 'Female', 'sabanal@gmail.com'),
+(35, 'Maudy', 'Minglanilla', '08967832453', 'Female', 'maudy@gmail.com'),
+(36, 'Ernest Quines', 'Taga Ilaha', '097834534', 'Male', 'quines@gmail.com'),
+(37, 'Ryan Laroa', 'Wa ko kaibaw', '098234534534', 'Male', 'laroa@gmail.com'),
+(38, 'Gian Henreich', 'Taga Langit ni Siya', '09345341234', 'Male', 'gian@gmail.com'),
+(39, 'Creshell', 'taga ilaha', '098945623', 'Female', 'albiso@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +73,7 @@ ALTER TABLE `prod_buyer`
 -- AUTO_INCREMENT for table `prod_buyer`
 --
 ALTER TABLE `prod_buyer`
-  MODIFY `buyer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `buyer_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
